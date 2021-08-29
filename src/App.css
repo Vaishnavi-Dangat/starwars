@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width:100%;
+  min-height:100vh;
+  font-family: 'Poppins', sans-serif;
+}
+.main_div{
+  width:100%;
+  min-height:100vh;
+  background-color: #000;
+}
+
+/* people section */
+.center_div{
+  padding:1rem 3rem;
+  width:100%;
+  min-height:90vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap:1rem 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.person_div{
+  height:150px;
+  color:white; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border:1px solid white;
+}
+.btn{
+  border: none;
+  outline:none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background: none;
+  color:#fff;
+  border-radius: 5px;
+  border:1px solid white;
+  cursor: pointer;
+}
+
+/* peopleDetail section */
+.personInfo_center{
+width:100%;
+height:90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.personInfo_div{
+  padding: 4rem 2rem;
+  width:300px;
+  height:auto;
+  padding: 20px 10px;
+  color:white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.personInfo_div h2{
+  margin-left: 1rem;
+}
+.personInfo_grid{
+ margin-top: 1rem;
+ padding-left: 1.6rem;
+ display:grid;
+ grid-template-columns: 1fr 1fr;
+ grid-gap:1rem 1rem;
+}
+
+/* Home section */
+.hero_div{
+  width:100%;
+  min-height:90vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap:1rem 1rem;
+  justify-content:space-around;
+  align-items: center;
+  justify-items: center;
+
+}
+.hero_content{
+  color:white;
+}
+.hero_img{
+  padding:1rem;
+  max-width:400px;
+  max-height:500px;
+}
+.hero_img img{
+  width:100%;
+  height:100%;
+}
+/* Navbar section */
+.navbar{
+  padding: 1rem 0rem;
+  width:100%;
+  height:50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.brand{
+  color:white;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+  color:white;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+a:hover,li:hover,.btn:hover{
+  color:red;
+}
+
+/* media query */
+@media only screen and (max-width:768px) {
+  .hero_div{
+    grid-template-columns: 1fr;
+  }
+  .hero_img{
+    order: 1;
+  }
+  .hero_content{
+    order: 2;
+  }
+
+}
